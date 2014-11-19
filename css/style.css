@@ -1,0 +1,93 @@
+body {
+	font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	transition: all 2s ease 1s;
+	-moz-transition: all 2s ease 1s;
+	-webkit-transition: all 2s ease 1s;
+	-o-transition: all 2s ease 1s;
+
+}
+
+#spinner {
+  width: 32px; height: 32px;
+  background-image: url('../img/spinner.png');
+  background-repeat: no-repeat; 
+  display: inline-block;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 20px;
+	padding: 0;
+	bottom: 0;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0;
+	bottom: 0;
+}
+
+.content {
+	margin-bottom: 20px;
+}
+
+.map-img {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.avatar-box {
+	display: inline-block;
+}
+
+.avatarText {
+	display: inline-block;
+	position: relative;
+}
+
+.box-inner {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	z-index: 2;
+}
+
+.box-inner-padding {
+	padding: 15px;
+}
+
+.box {
+	height: 184px;
+	display: block;
+	max-height: 184px;
+	cursor: pointer;
+}
+
+.box img {
+	display: inline-block;
+}
+
+.row {
+	margin-top: 10px;
+}
+
+#status, #fileDL, #total, #needed, #mapname, #servername, #gamemode, #maxplayers, #percent {
+	display: inline-block;
+}
+
+.slideshow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	z-index: 0;
+}
+.slideshow img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
