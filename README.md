@@ -1,10 +1,8 @@
----------------------------
 REQUIREMENTS
 ---------------------------
 - A webserver with PHP installed
 
 
----------------------------
 INSTALLATION INSTRUCTIONS
 ---------------------------
 - Upload all the files to your webserver and go to the url
@@ -17,7 +15,6 @@ http://yoursite.com/metroload/ or wherever you uploaded it to
 sv_loadingurl	"http://yoursite.com/metroload/index.php?steamid=%s&mapname=%m"
 - Test it ingame
 
----------------------------
 EDITING INSTRUCTIONS
 ---------------------------
 - fa-icons link = http://fortawesome.github.io/Font-Awesome/icons/
@@ -32,7 +29,6 @@ EDITING INSTRUCTIONS
 - In the row folders you have the settings for each specific box. Example, editing 1-gamemode.php will edit what shows in the blue gamemode/maxplayers box.
 - The 1- represents it's the first box in the row. Make it 3- and the third one 1- and they will switch places. You can add more than 3 files in one row assuming you have enough $size left. If all the boxes sizes equal 12 then you can not add any more boxes.
 
----------------------------
 DEBUGING
 ---------------------------
 - If you are getting warning errors make sure error_reporting in your php.ini is set to a PRODUCTION VALUE(EALL & ~E_DEPRECATED)
