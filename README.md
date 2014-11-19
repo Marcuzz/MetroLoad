@@ -40,4 +40,4 @@ DEBUGING
 sv_loadingurl "http://yoursite.com/index.php?steamid=%s&mapname=%m"
 
 - In the browser DO NOT use ?steamid=%s&mapname=%m just simply type in the URL like this: http://yoursite.com/
-- Got any suggestions please PM me on coderhire or add me on Steam, thanks! :)
+- Got any suggestions please open an issue on github or add me on Steam, thanks! :)
