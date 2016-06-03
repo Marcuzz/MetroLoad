@@ -11,7 +11,7 @@
 
 	// GENERAL SETTINGS
 	$default_steam64 = '76561197988497435'; // Default Steam64 ID if you're viewing in browser
-	$default_map = 'dm_richland'; // Default map if you're viewing in browser
+	$default_map = 'dm_richland_supreme00'; // Default map if you're viewing in browser
 	$SteamAPIKey = ''; // SteamAPI key (http://steamcommunity.com/dev/apikey)
 
 	$global_text_colour = '#FFF'; // Hex or colour name (Default: #FFF)
