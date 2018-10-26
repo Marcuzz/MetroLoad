@@ -11,7 +11,7 @@
 
 	// GENERAL SETTINGS
 	$default_steam64 = '76561197988497435'; // Default Steam64 ID if you're viewing in browser
-	$default_map = 'dm_richland_supreme00'; // Default map if you're viewing in browser
+	$default_map = 'dm_richland'; // Default map if you're viewing in browser
 	$SteamAPIKey = ''; // SteamAPI key (http://steamcommunity.com/dev/apikey)
 
 	$global_text_colour = '#FFF'; // Hex or colour name (Default: #FFF)
@@ -22,7 +22,7 @@
 	$gametracker_maps = false; // (true / false) - If this is enabled it iwll grab maps from gametracker.
 
 	$enable_music = true; // Enable music? (Selects random .ogg soundfile from the music directory) (true / false) (Default: true)
-	$music_volume = 0.5; // Music volume (Default: 0.5) Can be anywhere from 0.1 to 1
+	$music_volume = 0.05; // Music volume (Default: 0.5) Can be anywhere from 0.01 to 1
 
 	// Alternatively, use youtube IDs for music instead of the music directory(Music has to be enabled for this to work):
 	// A youtube ID is the string after v= in a youtube URL.
@@ -42,7 +42,7 @@
 	$bg_img = 'img/metro.png'; // URL or directory link for background image. It can be left blank (Default: img/metro.png)
 	$map_bg = false; // display map images as the background image? (true / false)
 
-	$enable_img_cycling = false; // Enable cycling through of background images located in the backgrounds folder(.JPG or .PNG) (Default: false)
+	$enable_img_cycling = true; // Enable cycling through of background images located in the backgrounds folder(.JPG or .PNG) (Default: false)
 	$img_cycling_timer = 2000; // Timer in miliseconds (Default: 2000)
 
 	$enable_cycle_colours = false; // Enable cycling background colours? (true / false) If this isn't working please empty $bg_img (Default: false)
