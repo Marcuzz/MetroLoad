@@ -7,15 +7,11 @@
 	<head>
 		<title>MetroLoad</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href="http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,300,600,700|Montserrat:400,700" rel="stylesheet" type="text/css" />
-
-		<?php
-			include('inc/javascript.php');
-		?>
+		<link href="//fonts.googleapis.com/css?family=Oswald|Open+Sans:400,300,600,700|Montserrat:400,700" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body class="bg" style="<?php echo $bg_img != '' ? 'background: url('.$bg_img.'); background-size: 100%; background-attachment: fixed;' : 'background: '.$bg_color.';';  echo 'color: '.$global_text_colour.';'; echo $map_bg ? 'background: url('.$mapname.'); background-size: 100%; background-attachment: fixed;' : ''; ?>">
@@ -24,10 +20,29 @@
 				<?php echo $images; ?>
 			</div>
 		<?php } ?>
+		<div class="wrapper">
 		<?php if($enable_music) { ?>
-			<?php if($youtube_ids[0] == '') { ?>
-				<audio id="music" autoplay='1' loop src='<?php echo $play; ?>'></audio>
+			<?php  if($youtube_ids[0] == '') { ?>
+				<div class="musicAudio">
+					<?php
+						$songs = '';
+						foreach($playlist as $i => $song){
+							if($i == 0)
+								$songs .= '<audio id="music" '.$att.' src="'.$song['file'].'" autoplay></audio>';
+							else
+								$songs .= '
+									<div style="display: none;">
+										<span class="file">'.$song['file'].'</span>
+										<span class="name">'.$song['name'].'</span>
+									</div>
+								';
+						}
+
+						echo $songs;
+					?>
+				</div>
 			<?php } ?>
+
 
 			<div style="position:relative;width:267px;height:0px;overflow:hidden;">
 				<div style="position:absolute;top:-276px;left:-5px">
@@ -210,5 +225,10 @@
 				echo '</div>';
 			?>
 		</div>
+		</div>
 	</body>
+
+	<?php
+		include('inc/javascript.php');
+	?>
 </html>
