@@ -16,7 +16,7 @@
 		$contents = '
 			<div class="box-inner">
 				<h3><i class="fa fa-'.$fa_icon.'"></i> '.$box_title.'</h3><br>
-				'.$play_name.'
+				<span class="songName">'.$playlist[0]['name'].'</span>
 			</div>
 		';
 	} else {
