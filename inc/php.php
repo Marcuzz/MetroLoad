@@ -45,18 +45,28 @@
 
 	if($enable_music && $youtube_ids[0] == '') {
 		$dir = 'music';
+		$playlist = [];
+
 		foreach(glob($dir.'/*.ogg') as $file) {
 			$files[] = $file;
-		}
-		$n = array_rand($files);
-		$play = $files[$n];
-		$play_name = str_replace('music/', '', $play);
-		$play_name = str_replace('.ogg', '', $play_name);
 
-		if (file_exists('music/' . $play_name . ".txt")) {
-			$play_file = file_get_contents('music/' . $play_name . ".txt");
-			$play_name = $play_file;
+			$play_name = str_replace('music/', '', $file);
+			$play_name = str_replace('.ogg', '', $play_name);
+
+			if (file_exists('music/' . $play_name . ".txt")) {
+				$play_file = file_get_contents('music/' . $play_name . ".txt");
+				$play_name = $play_file;
+			}
+
+			$playlist[] = [
+				'file' => $file,
+				'name' => $play_name
+			];
 		}
+
+		shuffle($playlist);
+
+		#die(var_dump($playlist));
 	}
 
 	if($enable_music && $youtube_ids[0] != '') {
