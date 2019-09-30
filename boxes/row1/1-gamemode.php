@@ -19,6 +19,6 @@ $contents = '
         <h3><i class="fa fa-gamepad"></i> Gamemode</h3><br>
         <div id="gamemode">Gamemode</div><br>
         <h3><i class="fa fa-users"></i> Max players</h3><br>
-        <div id="maxplayers">Maxplayers</div>
+        <div id="max-players">Maxplayers</div>
     </div>
 ';
