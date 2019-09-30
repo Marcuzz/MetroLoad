@@ -12,7 +12,7 @@
 	// GENERAL SETTINGS
 	$default_steam64 = '76561197988497435'; // Default Steam64 ID if you're viewing in browser
 	$default_map = 'dm_richland'; // Default map if you're viewing in browser
-	$SteamAPIKey = ''; // SteamAPI key (http://steamcommunity.com/dev/apikey)
+	$steam_api_key = ''; // SteamAPI key (http://steamcommunity.com/dev/apikey)
 
 	$global_text_colour = '#FFF'; // Hex or colour name (Default: #FFF)
 	$banner = 'img/banner.png'; // URL or directory link for a banner. Make sure they're not too big! It can be left blank (Default: img/banner.png)
@@ -36,7 +36,6 @@
 		'',
 		''
 	];
-
 
 	// BACKGROUND SETTINGS
 	$bg_color = '#004051'; // Background colour (Default: #004051)
@@ -67,5 +66,3 @@
 	$progress_bg = '#eaeaea'; // The background colour of the progress bar
 	$progress_inner = '#004051'; // The inner colour of the progress bar(When there is progress made)
 	$show_gif_spinner = true; // Show the animated loading spinner (true / false) If false it shows a static spinner
-
-?>

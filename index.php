@@ -1,6 +1,4 @@
-<?php
-	require_once('inc/php.php');
-?>
+<?php require_once('inc/php.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -42,7 +40,6 @@
 					?>
 				</div>
 			<?php } ?>
-
 
 			<div style="position:relative;width:267px;height:0px;overflow:hidden;">
 				<div style="position:absolute;top:-276px;left:-5px">
@@ -228,7 +225,5 @@
 		</div>
 	</body>
 
-	<?php
-		include('inc/javascript.php');
-	?>
+	<?php include('inc/javascript.php'); ?>
 </html>
