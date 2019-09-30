@@ -27,14 +27,15 @@
 	// Alternatively, use youtube IDs for music instead of the music directory(Music has to be enabled for this to work):
 	// A youtube ID is the string after v= in a youtube URL.
 	// Youtube_names is the name of the track.
-	$youtube_ids = array(
+	$youtube_ids = [
 		'',
 		''
-	);
-	$youtube_names = array(
+	];
+
+	$youtube_names = [
 		'',
 		''
-	);
+	];
 
 
 	// BACKGROUND SETTINGS
@@ -46,21 +47,21 @@
 	$img_cycling_timer = 2000; // Timer in miliseconds (Default: 2000)
 
 	$enable_cycle_colours = false; // Enable cycling background colours? (true / false) If this isn't working please empty $bg_img (Default: false)
-	$colours = array( // Background colours for the cycling backgrounds
+	$colours = [ // Background colours for the cycling backgrounds
 		'#004051',
 		'#005166',
 		'#006d8a',
 		'#148321',
 		'#009a69',
 		'#0023a7'
-	);
+	];
 
 	// GLOBAL BOX SETTINGS
 	$one_colour = ''; // Set this if you want all the boxes to have ONE specific colour(A colour value, hex code or colour name)
-	$one_gradient = array(
+	$one_gradient = [
 		'', // Left colour
 		'' // Right colour
-	);
+	];
 
 	// PROGRESS BAR SETTINGS
 	$progress_bg = '#eaeaea'; // The background colour of the progress bar
